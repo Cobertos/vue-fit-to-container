@@ -1,0 +1,48 @@
+{
+  "name": "vue-input-contenteditable",
+  "description": "A Vue wrapper around contenteditable to make beautiful inputs free from styling restrictions",
+  "main": "dist/vue-input-contenteditable.umd.js",
+  "module": "dist/vue-input-contenteditable.common.js",
+  "unpkg": "dist/vue-input-contenteditable.umd.min.js",
+  "browser": {
+    "./sfc": "src/input-contenteditable.vue"
+  },
+  "author": {
+    "name": "Cobertos / Peter",
+    "email": "me+npm@cobertos.com",
+    "url": "http://cobertos.com"
+  },
+  "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cobertos/vue-input-contenteditable"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve tests/dev/main.vue",
+    "build": "vue-cli-service build --target lib src/wrapper.js",
+    "lint": "vue-cli-service lint --no-fix",
+    "lint:fix": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-unit-mocha": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jsdom": "^15.1.1",
+    "jsdom-global": "^3.0.2",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
