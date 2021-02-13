@@ -1,24 +1,21 @@
 {
-  "name": "vue-input-contenteditable",
-  "description": "A Vue wrapper around contenteditable to make beautiful inputs free from styling restrictions",
-  "main": "dist/vue-input-contenteditable.umd.js",
-  "module": "dist/vue-input-contenteditable.common.js",
-  "unpkg": "dist/vue-input-contenteditable.umd.min.js",
-  "browser": {
-    "./sfc": "src/input-contenteditable.vue"
-  },
+  "name": "vue-overflow-resize",
+  "description": "A Vue component that automatically adjusts the content to fit a fixed size container",
+  "main": "dist/vue-overflow-resize.umd.js",
+  "module": "dist/vue-overflow-resize.common.js",
+  "unpkg": "dist/vue-overflow-resize.umd.min.js",
   "author": {
-    "name": "Cobertos / Peter",
+    "name": "Cobertos / Samantha",
     "email": "me+npm@cobertos.com",
-    "url": "http://cobertos.com"
+    "url": "https://cobertos.com"
   },
-  "version": "0.1.4",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Cobertos/vue-input-contenteditable"
+    "url": "https://github.com/Cobertos/vue-overflow-resize"
   },
   "scripts": {
-    "serve": "vue-cli-service serve tests/dev/main.vue",
+    "serve": "vue-cli-service serve tests/dev/main.js",
     "build": "vue-cli-service build --target lib src/wrapper.js",
     "lint": "vue-cli-service lint --no-fix",
     "lint:fix": "vue-cli-service lint",
@@ -39,6 +36,7 @@
     "chai": "^4.1.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "faker": "^5.4.0",
     "jsdom": "^15.1.1",
     "jsdom-global": "^3.0.2",
     "sass": "^1.18.0",

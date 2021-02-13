@@ -1,10 +1,10 @@
-import AutoresizeDirective from './input-contenteditable.vue';
+import directive from './overflow-resize.js';
 
 // Declare install function executed by Vue.use()
 export function install (Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.directive('autoresize', AutoresizeDirective);
+  Vue.directive('overflow-resize', directive);
 }
 
 // Auto-install when vue is found (eg. in browser via <script> tag)
